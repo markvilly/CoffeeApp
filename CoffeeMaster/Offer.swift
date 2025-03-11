@@ -8,11 +8,30 @@
 import SwiftUI
 
 struct Offer: View {
+    var title = ""
+    var description = ""
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Image("BackgroundPattern")
+                .frame(maxWidth: .infinity, maxHeight: 200)
+                .clipped()
+            VStack {
+                
+                Text(title)
+                    .padding(19)
+                    .font(.title)
+                    .background(Color("CardBackground"))
+                Text(description)
+                    .padding(24)
+                    .font(.caption)
+                    .background(Color("CardBackground"))
+            }
+        }
+        
     }
 }
 
 #Preview {
-    Offer()
+    Offer(title: "Mark Phucks", description: "Like a turtle")
 }

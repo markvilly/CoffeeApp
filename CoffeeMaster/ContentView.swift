@@ -8,16 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            Text("Home Page")
+                .tabItem {
+                    Image(systemName: "info")
+                    Text("Home Page")
+                }
+            OffersPage()
         }
-        .padding()
+        
+        
     }
 }
+
+//struct Greeting: View {
+//    @State var name = "unnamed"
+//    var body: some View {
+//        VStack {
+//            TextField("Enter your Name", text: $name) // this modifiest the name variable.
+//            Text("Hello \(name)")
+//        }
+//        .padding()
+//    }
+//}
 
 #Preview {
     ContentView()
