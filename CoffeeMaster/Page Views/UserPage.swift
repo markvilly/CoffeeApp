@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct InfoPage: View {
+struct UserPage: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    InfoPage()
+    UserPage()
 }
