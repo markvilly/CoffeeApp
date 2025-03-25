@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+//    @EnvironmentObject var menuManager: MenuManager
     
     var body: some View {
         TabView {
@@ -51,4 +51,6 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(CartManager())
+        .environmentObject(MenuManager())
 }
